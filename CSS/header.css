@@ -1,0 +1,127 @@
+.header_top{
+    background:#f7f7f7;
+    width:100%;
+    height:35px;
+    border-bottom:1px solid #d3d3d3;
+}
+
+.header_top .header_top_left{
+    line-height:35px;
+    margin-left:330px;
+    float:left;
+}
+.header_top_left span{ 
+    margin-left:10px;
+} 
+i{
+    margin-left:10px;
+    margin-right:10px;
+}
+.header_top_ri{
+    float:right;
+    margin-right:400px;
+}
+ul li{
+    float:left;
+    line-height: 35px;
+    padding:0 5px;
+}
+ul li  a:hover{
+    color:#cc0000;
+}
+/* 上面为header_top顶部分 */
+/* 下面为header_middle部分 */
+.header_middle{
+    position: relative;
+    margin:0 auto;
+}
+.header_mid_left_img img{
+    display:block;
+    float: left;
+    margin-left:260px;
+    margin-top:3px;
+}
+.header_mid_search{
+    float:left;
+}
+.header_mid_search_pro{
+    width:510px;
+    height:36px;
+    display:inline-block;
+    border:3px solid #cc0000;
+    outline:0;
+    margin-top:38px;
+    margin-left:28px;
+    box-sizing: unset;
+    position: relative;
+}
+.header_mid_search_pro>span{
+    width:80px;
+    line-height:36px;
+    font-size:14px;
+    cursor:pointer;
+    text-align:center;
+    background:#f7f7f7;
+    border-right:1px solid #e8e8e8;
+    padding:8px 26px 9px;
+    color:#747474;
+    
+}
+.header_mid_search_pro .header_search_input{
+    width:340px;
+    height:15px;
+    padding:19px 90px 9px 0px;
+    outline: none; 
+    border-width:0px;
+}
+.header_mid_search_pro button{
+    width:80px;
+    height:37px;
+    background-color:#cc0000;
+    font-size:16px;
+    border:none;
+    
+    cursor:pointer;
+    position: absolute;
+    left:430px;
+}
+.header_mid_search_pro button a {
+    color: #fff;
+    text-decoration: none;
+}
+.header_mid_search .search_img_mid{
+    float:right;
+    margin-left:28px;
+    margin-top:18px;
+    cursor: pointer;
+}
+.tag{
+    margin-left:28px;
+}
+.tag ul li {
+    margin-right:8px;
+}
+div.shop_car{
+    float: right;
+    min-width: 140px;
+    height:40px;
+    margin-top:34px;
+    margin-right:500px;
+    line-height: 38px;
+    text-align: center;
+    border:1px solid #d1d1d1;
+}
+.icon{
+    display:block;
+    float: left;
+    background-image:url(../img/header/basic_icon.png);
+    background-position: 0px 0px;
+    width:35px;
+    height:30px;
+}
+#shop_w{
+    display: inline-block;
+}
+#shop_w a {
+    font-size: 16px;
+}

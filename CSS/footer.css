@@ -1,0 +1,22 @@
+.footer{
+    margin-top:15px;
+}
+.footer .footer_top{
+    border-top:1px solid #e2e2e2;
+    width:960px;
+    margin:0 auto;
+    min-height: 150px;
+    background:#fdfdfd;
+    overflow: hidden;
+    display:flex;
+    justify-content:space-around; 
+}
+.footer .footer_top ul li{
+    margin-top:10px;
+}
+ul li a:hover {
+    color: #cc0000;}
+.footer_b{
+    color:#747474;
+    text-align: center;
+}
