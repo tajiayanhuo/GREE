@@ -118,8 +118,32 @@
 /*底层轮播图的图片*/
 .under{
     background: url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/20/40e710dc-27ab-4884-a0d5-1bd3b429051c.jpg'); 
-    repeat:no-repeat; 
+    background-repeat:no-repeat; 
     text-align:center; 
     width: 100%; 
     height: 450px;
+}
+/* 主体部分 */
+/* 楼梯部分 */
+p.floor{
+    font-size:20px;
+    height:30px;
+    font-family:"黑体";
+    line-height: 20px;
+    margin-top:10px;
+    display:block;
+    color: #747474;
+    margin-left:300px;
+}
+/* 一楼产品 */
+ul.f_1{
+    margin-left:300px;
+}
+.f_1>li{
+    float: left;
+    margin-right:20px;
+}
+/* 解决高度坍塌 */
+.floor_h{
+    clear:both;
 }
