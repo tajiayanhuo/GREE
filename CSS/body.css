@@ -141,9 +141,70 @@ ul.f_1{
 }
 .f_1>li{
     float: left;
-    margin-right:20px;
+    margin-right:7px;
 }
 /* 解决高度坍塌 */
 .floor_h{
     clear:both;
 }
+/* 每日精选内容推荐部分 */
+.f_2{
+    margin-left:300px;
+    display: flex;
+}
+.f_2_left,.f_2_2_top{
+    margin-right:10px;
+}
+.f_2_2{
+    position: relative;
+}
+.f_2_2_bt{
+    position: absolute;
+    top: 290px;
+    left: 300px;
+}
+.f_2_2_top,.f_2_2_rig{
+    margin-bottom: 7px;
+}
+/* 楼层部分 */
+.F_1F{
+    margin-top:15px;
+    margin-left:300px;
+    position: relative;
+    
+}
+.F_1F_top{
+    width: 1200px;
+    height: 40px;
+    background: #f5f5f5;
+}
+.F_1F .F_1F_top b,
+.F_1F .F_1F_top a,
+.F_1F .F_1F_top span{
+    display:block;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: normal;
+    float: left;
+}
+.F_1F .F_1F_top b{
+    width:40px;
+    font-size:23px;
+    background:rgb(216, 58, 73);color:#fff;
+}
+.F_1F .F_1F_top a{
+    width:125px;
+    font-size: 20px;
+    color: rgb(216, 58, 73);
+    margin-left:20px;
+    margin-right: 30px;
+}
+.F_1F .F_1F_top span{
+    width:125px;
+    background:rgb(216, 58, 73);
+    color:#fff;
+    font-size:14px;
+    font-weight: bold;
+}
+/*  */
