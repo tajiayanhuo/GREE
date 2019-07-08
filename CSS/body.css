@@ -207,4 +207,48 @@ ul.f_1{
     font-size:14px;
     font-weight: bold;
 }
-/*  */
+/*1F主体内容部分  */
+.F_1F_body{
+    margin-top:8px;
+}
+.F_1F_body{
+    display: flex;
+}
+.F_1F_body div ul{
+    width: 600px;
+}
+.F_1F_body div ul li{
+    float: left;
+    width:197px;
+    height:233px;
+    border:1px solid #f5f5f5;
+}
+.F_1F_body div ul li img{
+    width:160px;
+    height:160px;
+    cursor: pointer;
+}
+.F_1F_body div ul li a{
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+    width: 180px;
+    display: block;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 36px;
+    word-break: break-all;
+    cursor: pointer;
+}
+.F_1F_body div ul li span{
+    color: #c00;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    font: 700 18px/24px Verdana,
+    Arial;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
