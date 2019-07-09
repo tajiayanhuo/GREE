@@ -170,8 +170,6 @@ ul.f_1{
 .F_1F{
     margin-top:15px;
     margin-left:300px;
-    position: relative;
-    
 }
 .F_1F_top{
     width: 1200px;
@@ -192,6 +190,7 @@ ul.f_1{
     width:40px;
     font-size:23px;
     background:rgb(216, 58, 73);color:#fff;
+    cursor: pointer;
 }
 .F_1F .F_1F_top a{
     width:125px;
@@ -206,7 +205,10 @@ ul.f_1{
     color:#fff;
     font-size:14px;
     font-weight: bold;
+    cursor: pointer;
 }
+
+
 /*1F主体内容部分  */
 .F_1F_body{
     margin-top:8px;
@@ -251,4 +253,35 @@ ul.f_1{
     text-align: center;
     margin-top: 5px;
     cursor: pointer;
+}
+.boss{
+    margin-left: 300px;
+}
+/* 侧边的导航 */
+#side{
+    position: fixed;
+    top:409px;
+    left:230px;
+    z-index: 999;
+    background:rgba(256,256,256,0.5);
+}
+#side .side_left{
+    border:1px solid #dedede;
+    margin-top:2px;
+    border-radius: 50%;
+    cursor:pointer;
+    text-align: center;
+}
+#side .side_left a{
+    display: block;
+    height:60px;
+    width:60px;
+    color:#f00;
+    line-height: 60px;
+    font-size: 16px;
+}
+#side .side_left a:hover{
+    background: #c00;
+    color:#fff;
+    
 }
