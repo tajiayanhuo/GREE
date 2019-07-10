@@ -90,6 +90,7 @@
     border:1px solid #124;
     float: left;
     display:none;
+
 }
 .hiddens>div:target{
     display:block;
@@ -116,12 +117,65 @@
     margin-left:40px;
 }
 /*底层轮播图的图片*/
+.lun_bo{
+     position: relative; 
+     z-index: -1;
+}
 .under{
-    background: url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/20/40e710dc-27ab-4884-a0d5-1bd3b429051c.jpg'); 
-    background-repeat:no-repeat; 
+    position: relative;
+    left:0px;
+    
+}
+.under_0,.under_1,.under_2{    
+    background-repeat:no-repeat;
     text-align:center; 
     width: 100%; 
     height: 450px;
+}
+.under_0{
+    position: absolute;
+    left: 0%;
+    top: 0;
+}
+.under_1{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+.under_2 {
+    position: absolute;
+    left: 200%;
+    top: 0;
+}
+    
+
+.under_0{
+    background: url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/20/40e710dc-27ab-4884-a0d5-1bd3b429051c.jpg');
+}
+.under_1{
+    background:url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/4/0a7c95b5-f5ed-4199-982c-477e4e90e2bb.jpg')
+}
+.under_2{
+    background:url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/12/20/0f72f3a2-0f47-4447-937d-111e30822a6b.jpg')
+}
+.dotted{
+    position: absolute;
+    z-index: 2;
+    line-height: 40px;
+    top: 390px;
+    display: flex;
+    left: 650px;
+    cursor: pointer;
+}
+ul.dotted li{
+    color: #ff0;
+    margin-left: 33px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(256, 256, 256, 0.2);
+    cursor: pointer;
 }
 /* 主体部分 */
 /* 楼梯部分 */
@@ -134,6 +188,7 @@ p.floor{
     display:block;
     color: #747474;
     margin-left:300px;
+    clear: both;
 }
 /* 一楼产品 */
 ul.f_1{
