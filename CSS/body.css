@@ -59,7 +59,8 @@
 .product_list{
     margin-left: 300px;
     float:left;
-    z-index:999;
+    z-index:5;
+    position: relative;
 }
 .product_list ul{
     overflow: hidden;
@@ -83,16 +84,21 @@
     font-size:14px;
 }
 /* 下拉菜单右侧隐藏部分 */
+.hiddens{
+    position: relative;
+    left:489px;
+    top:0px;
+}
 .hiddens>div{
+    position: absolute;
     height:450px;
     background:#fff;
     width:800px;
     border:1px solid #124;
-    float: left;
-    display:none;
-
+    display: none;
+    z-index: 1;
 }
-.hiddens>div:target{
+.hiddens>div:hover{
     display:block;
 }
 .hiddens div p,
@@ -119,7 +125,8 @@
 /*底层轮播图的图片*/
 .lun_bo{
      position: relative; 
-     z-index: -1;
+     z-index: 0;
+     height: 450px;
 }
 .under{
     position: relative;
@@ -160,12 +167,10 @@
 }
 .dotted{
     position: absolute;
-    z-index: 2;
     line-height: 40px;
     top: 390px;
     display: flex;
     left: 650px;
-    cursor: pointer;
 }
 ul.dotted li{
     color: #ff0;
@@ -176,6 +181,10 @@ ul.dotted li{
     border-radius: 50%;
     background: rgba(256, 256, 256, 0.2);
     cursor: pointer;
+}
+ul.dotted li:hover{
+    background: #f00;
+    color:#fff;
 }
 /* 主体部分 */
 /* 楼梯部分 */
@@ -318,22 +327,21 @@ ul.f_1{
     top:409px;
     left:230px;
     z-index: 999;
-    background:rgba(256,256,256,0.5);
 }
 #side .side_left{
-    border:1px solid #dedede;
-    margin-top:2px;
-    border-radius: 50%;
-    cursor:pointer;
-    text-align: center;
+    text-align: center; 
 }
 #side .side_left a{
     display: block;
     height:60px;
     width:60px;
+    border:1px solid #dedede;
+    margin-top:2px;
+    border-radius: 50%;
     color:#f00;
     line-height: 60px;
     font-size: 16px;
+    background:rgba(256, 256, 256, 0.5);
 }
 #side .side_left a:hover{
     background: #c00;

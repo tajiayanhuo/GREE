@@ -1,14 +1,22 @@
-// 先找到轮播图下面的序号
-var dot_1 = document.getElementsByClassName("dot_1")[0];
-var dot_2 = document.getElementsByClassName("dot_2")[0];
-var dot_3 = document.getElementsByClassName("dot_3")[0];
-var under_0 = document.getElementsByClassName("under_0")[0];
-var under_1 = document.getElementsByClassName("under_1")[0];
-var under_2 = document.getElementsByClassName("under_2")[0];
-console.log(under_0)
-var lun=document.getElementsByClassName("lun_bo")[0]
-dot_1.onclick=function(){
-    //要修改的元素
-    lun.style.left=200%
-    console.log(lun)
+// 下拉菜单隐藏部分的的点击打开
+(function(){
+    //1. 查找触发事件的元素
+    var tabs = document.querySelectorAll("#tabs>ul>[data-toggle=tab]");
+    //2. 绑定触发事件函数
+    for(var tab of tabs){
+        tab.onmouseover=function(){
+            //查找要修改的元素
+            //获得保存在a上的自定义扩展属性data-target中的id名
+            var id=this.dataset.target
+            var div=document.getElementById(id)
+            //4. 修改元素
+            div.style.display="block";
+    }
+        tab.onmouseout=function(){
+        id = this.dataset.target
+        var div = document.getElementById(id)
+        //4. 修改元素
+        div.style.display = "none";
+    }
 }
+})()
