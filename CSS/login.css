@@ -1,0 +1,145 @@
+html,body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd, i{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei, Arial;
+    font-size: 12px;
+    list-style: none;
+    font-style: normal;
+}
+html{
+    color:#747474;
+}
+body{
+    background:#fafafa;
+}
+div.log_head{
+    width:1200px;
+    height:110px;
+    margin:0 auto;
+    background:#fff;
+    position: relative;
+}
+div.log_head_img{
+    width:210px;
+    height:97px;
+    float: left;
+}
+div.log_head>div:nth-child(2){
+    float: left;
+    min-width: 160px;   
+    max-width: 560px;
+    font-size: 24px;
+}
+div.log_head>div:nth-child(2)>span{
+    line-height: 97px;
+}
+div.log_head>div:nth-child(2)>span>i{
+    display:inline-block;
+    font-size:24px;
+    margin-left: 10px;
+}
+/* 内容部分 */
+div.log_body{
+    width:980px;
+    height:410px;
+    margin:10px auto;
+    background: #fff;
+    box-shadow: 0px 0px 8px #ddd;
+}
+div.log_body>div:nth-child(1){
+    float: left;
+    margin:10px 30px;
+}
+div.log_body>div:nth-child(1)>img{
+    width:500px;
+    height:380px;
+}
+div.log_body>div:nth-child(2){
+    width: 380px;
+    height: 380px;
+    float: right;
+    margin: 10px 0px 0px 10px;
+    padding-top: 20px;
+}
+ul{
+    margin-top:50px;
+    position: relative;
+}
+ul>li{
+    margin-top:20px;
+    
+}
+ul>li>input{
+    font-family: Microsoft Yahei;
+    color: #474747;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    border-radius: 2px;
+    width:270px;
+}
+ul>li>span{
+    display: inline-block;
+    width:35px;
+    height: 35px;
+    position: absolute;
+}
+#userTic,
+#upwTic {
+    font-size:8px;
+    color:red;
+    visibility: hidden;
+}
+#userTic.open,
+#upwTic.open {
+    visibility: visible;
+}
+.spr_log{
+    background:url(../img/sprite/men.jpg);
+    position: absolute;
+    top:3px;
+    left: 250px;
+
+}
+.spr_upw{
+    background: url(../img/sprite/lc.jpg);
+    top:60px;
+    left: 251px;
+}
+ul>li>button {
+    width:287px;
+    height: 39px;
+    background: #c00;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
+ul>li:nth-child(4)>a{
+    text-decoration: none;
+    color: #747474;
+}
+#qq,#wx{
+    display: inline-block;
+    width:19px;
+    height:19px;
+}
+ul>li:nth-child(4)>a #qq{
+    background:url(../img/login/QQ-weixin.png);
+    background-position: 0px 0px;
+}
+ul>li:nth-child(4)>a #wx{
+    background: url(../img/login/QQ-weixin.png);
+    background-position: 20px 0px;
+}
+ul>li:nth-child(5)>a{
+    color:#c00;
+    font-size:8px;
+    text-decoration: none;
+}
+.font_pwd{
+    margin-left: 205px;
+}
