@@ -1,17 +1,32 @@
-// 对用户框进行验证
-// 查找触发事件的元素
-(function(){
-var form=document.forms[0]
-var txtName=form.username;
-var txtpwd=form.pwd;
-// 绑定事件
-    txtName.onblur=txtpwd.onblur=function(){
-        // 获取改变事件的元素
-        var tic = this.parentNode.children[2]
-        // 改变函数
-        // 正则表达式验证
-        ver reg=/^/
-        tic.className="open"
+// 对账号进行验证
+$("input:text").focus(function(){
+    console.log($("input:text"))
+    $("#userTic").addClass("open");
+})
+$("input:text").blur(function () {
+    // 验证账号长度
+    $("#userTic").addClass("open");
+    var reg=/^\w{6,8}$/g
+    if (reg.test($("input:text").val())){
+    
+    $("#userTic").html("验证格式通过")
+    }else{
+        $("#userTic").html( "验证格式失败") 
     }
-    txtName.focus();
-})()
+})
+// 验证密码
+$("input:password").focus(function () {
+    console.log($("input:password"))
+    $("#upwTic").addClass("open");
+})
+$("input:password").blur(function () {
+    // 验证账号长度
+    $("#upwTic").addClass("open");
+    var reg = /^\w{6,12}$/g
+    if (reg.test($("input:password").val())) {
+
+        $("#upwTic").html("验证格式通过")
+    } else {
+        $("#upwTic").html("验证格式失败")
+    }
+})
