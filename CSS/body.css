@@ -128,63 +128,68 @@
     margin-left: 100px;
 }
 /*底层轮播图的图片*/
-.lun_bo{
-     position: relative; 
-     z-index: 0;
-     height: 450px;
-     
+#lun_bo{
+    margin:0 auto;
+    width: 100%;
 }
-.lun_bo>ul:nth-child(1){
-    position: relative;
-    left:0px;
+#banner{
+    width: 100%;
+    overflow:hidden;
+    position:relative;
 }
-div.lun_bo>ul:nth-child(1)>li{   
-    text-align:center; 
-    width: 100%; 
-    height: 450px;
-    position: absolute;
-    transition: all .5s;
+#under{
+    list-style: none;
 }
-.under_0{
-    background: url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/20/40e710dc-27ab-4884-a0d5-1bd3b429051c.jpg');
-    left: 0%;
-    top: 0;
-    opacity: 1;
+#under.transition{
+    transition:all .5s linear;
 }
-.under_1{
-    background:url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/4/0a7c95b5-f5ed-4199-982c-477e4e90e2bb.jpg');
-    left: 0%;
-    top: 0;
-    opacity: 0;
+#under>li{
+    width:100%;
+    float:left;
 }
-.under_2 {
-    background:url('https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/12/20/0f72f3a2-0f47-4447-937d-111e30822a6b.jpg');
-    left: 0%;
-    top: 0;
-    opacity: 0;
+#under img{
+    width:100%;
 }
-
-.lun_bo>ul:nth-child(2) {
-    position: absolute;
-    line-height: 40px;
-    top: 390px;
-    display: flex;
-    left: 650px;
+#dotted{
+    width:100px;
+    margin:0 auto;
+    list-style:none;
+    position:absolute;
+    bottom:25px;
+    left:50%;
+    margin-left:-50px;
 }
-ul.dotted li{
-    color: #ff0;
-    margin-left: 33px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(256, 256, 256, 0.2);
-    cursor: pointer;
+#dotted>li{
+    float:left;
+    width:10px; height:10px;
+    background-color:#fff;
+    border-radius:5px;
+    margin:0 5px;
+    cursor:pointer;   
 }
-ul.dotted li:hover{
-    background: #f00;
-    color:#fff;
+#dotted>li.active{
+    background-color:blue;
 }
+#btn-left,#btn-right{
+    width:60px;
+    height:100%;
+    position:absolute;
+    top:0;
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+  }
+  #btn-left{
+    left:20px;
+    background-image:url("..CSS/body/left_ar.png");
+  }
+  #btn-right{
+    right:20px;
+    background-image:url(image/carousel_item/right_ar.png);
+  }
+  #btn-left:hover,#btn-right:hover{
+    background-size:40px 70px
+  }
 /* 主体部分 */
 /* 楼梯部分 */
 p.floor{
