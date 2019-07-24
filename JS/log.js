@@ -6,7 +6,7 @@ $("input:text").focus(function(){
 $("input:text").blur(function () {
     // 验证账号长度
     $("#userTic").addClass("open");
-    var reg=/^\w{6,8}$/g
+    var reg=/^\w{6,12}$/g
     if (reg.test($("input:text").val())){
     
     $("#userTic").html("验证格式通过")
