@@ -172,26 +172,7 @@
 #dotted>li.active{
     background-color:blue;
 }
-#btn-left,#btn-right{
-    width:60px;
-    height:100%;
-    position:absolute;
-    top:0;
-    background-repeat:no-repeat;
-    background-position:center;
-    cursor:pointer;
-  }
-  #btn-left{
-    left:20px;
-    background-image:url("..CSS/body/left_ar.png");
-  }
-  #btn-right{
-    right:20px;
-    background-image:url(image/carousel_item/right_ar.png);
-  }
-  #btn-left:hover,#btn-right:hover{
-    background-size:40px 70px
-  }
+
 /* 主体部分 */
 /* 楼梯部分 */
 p.floor{

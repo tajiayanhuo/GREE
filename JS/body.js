@@ -17,13 +17,12 @@
      }, function () {
          $(this).hide();
      });
-
-
 // 轮播图的滑动
+(function(){
     var i=0;
     var LIWIDTH=100
     var DURATION=500;
-    var LICOUNT=4;
+    var LICOUNT=3;
     var ulImgs=document.getElementById("under");
     var ulIdxs=document.getElementById("dotted");
     var lis=ulIdxs.children;
@@ -48,7 +47,6 @@ ulImgs.style.marginLeft=-i*LIWIDTH+"%";
       for(var li of lis){
         li.className = ""
     }
-    console.log(i);
       if(i==LICOUNT){
         i = 0;
     setTimeout(function(){
@@ -58,26 +56,6 @@ ulImgs.style.marginLeft=-i*LIWIDTH+"%";
 }
 lis[i].className="active";
 }
-        var btnLeft=document.getElementById("btn-left");
-        var btnRight=document.getElementById("btn-right");
-        var canClick=true;
-    btnRight.onclick=function(){
-            move(1)
-        }
-        function move(n){
-      if(canClick){
-            console.log(i + n);
-        moveTo(i+n);
-        canClick=false;
-        setTimeout(function(){
-            canClick = true;
-        },DURATION+100);
-      }
-    }
-    btnLeft.onclick=function(){
-            move(-1);
-        }
-
         var interval=3000;
     var timer=setInterval(function(){
             moveTo()
@@ -112,3 +90,5 @@ lis[i].className="active";
     }
   }
 }
+})()
+// 边侧随着鼠标滑动出现选中样式的效果
