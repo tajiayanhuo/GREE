@@ -107,6 +107,7 @@ $(function(){
       // 遍历内容中的楼层，获取对应的下标
       console.log($(".F_1F"))
       $("div.F_1F").each(function () {
+        //当前视口的偏移距离高度-获取元素的外部高度
         if (st >= $(this).offset().top-630){
           var index=$(this).index();
           $("#side .side_left li").eq(index-9).addClass("hover").siblings().removeClass("hover")  
