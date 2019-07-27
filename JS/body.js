@@ -92,3 +92,39 @@ lis[i].className="active";
 }
 })()
 // 边侧随着鼠标滑动出现选中样式的效果
+$(function(){
+  var flag=true;
+  $(window).scroll(function(){
+    if(flag){
+      var st=$(this).scrollTop();//鼠标滑动距离
+      // console.log(st)
+      // 滑动距离大于300显示侧边列表
+      if(st>300){
+        $("#side").fadeIn();
+      }else{
+        $("#side").fadeOut()
+      };
+      // 遍历内容中的楼层，获取对应的下标
+      console.log($(".F_1F"))
+      $("div.F_1F").each(function () {
+        if (st >= $(this).offset().top-630){
+          var index=$(this).index();
+          $("#side .side_left li").eq(index-9).addClass("hover").siblings().removeClass("hover")  
+        }
+    })
+    // 排除最后一个li添加点击事件，先获取索引 添加类名移除兄弟元素类名
+      $("#side .side_left li:not(:last)").click(function(){
+        flag=false;
+        var index=$(this).index();
+        console.log(index)
+        $(this).addClass("hover").siblings().removeClass("hover");
+        // 页面滚动到对应li标签的对应位置
+        $("body,html").scrollTop($(".F_1F").eq(index).offset().top)
+      });
+      $("#side .side_left li:last").click(function(){
+        $("body,html").scrollTop(0)
+        
+      })
+    }
+  })
+})
