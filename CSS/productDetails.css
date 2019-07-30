@@ -5,5 +5,63 @@
     overflow: hidden;
 }
 div.proDetails .proDetails_top{
-    
+    position: relative;
+}
+/* 面包屑导航的样式 */
+div.proDetails_top_bread{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    margin: 10px;
+}
+div.proDetails_top_bread span>a{
+    font-size: 16px;
+    color: #666666;
+    font-weight: bold;
+}
+div.proDetails_top_bread a:hover{
+    color: #b20000;
+}
+/* 左侧图片部分 */
+.proDetails_top_img_bigImg img{
+    width: 398px;
+    height: 398px;
+}
+/* 下面小图片 */
+div.proDetails_top_img_smImg{
+        position: relative;
+        height: 82px;
+        margin-top: 5px;
+        background-color: #fff;
+        padding: 6px 5px;
+        width: 390px;
+        overflow: hidden;
+        float: left
+}
+.proDetails_top_img_smImg div.leftButton{
+        float: left;
+}
+.proDetails_top_img_smImg div.leftButton img,
+.proDetails_top_img_smImg div.rightButton img {
+    width: 15px;
+    height: 15px;
+}
+.proDetails_top_img_smImg ul{
+    height: 82px;
+    width: 360px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.proDetails_top_img_smImg ul li{
+    float: left
+}
+.proDetails_top_img_smImg ul li img{
+    width: 78px;
+    height: 78px;
+    vertical-align: middle
+}
+
+.proDetails_top_img_smImg div.rightButton{
+    float: left
 }
