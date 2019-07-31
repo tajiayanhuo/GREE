@@ -36,25 +36,26 @@ div.proDetails_top_img_smImg{
         background-color: #fff;
         padding: 6px 5px;
         width: 390px;
-        overflow: hidden;
-        float: left
 }
 .proDetails_top_img_smImg div.leftButton{
         float: left;
+        line-height: 82px;
 }
 .proDetails_top_img_smImg div.leftButton img,
 .proDetails_top_img_smImg div.rightButton img {
     width: 15px;
     height: 15px;
 }
+
 .proDetails_top_img_smImg ul{
     height: 82px;
-    width: 360px;
+    width: 330px;
     overflow: hidden;
     margin-left: 10px;
+    float: left;
 }
 .proDetails_top_img_smImg ul li{
-    float: left
+    float: left;
 }
 .proDetails_top_img_smImg ul li img{
     width: 78px;
@@ -63,5 +64,6 @@ div.proDetails_top_img_smImg{
 }
 
 .proDetails_top_img_smImg div.rightButton{
-    float: left
+    float: left;
+    line-height: 82px;
 }
