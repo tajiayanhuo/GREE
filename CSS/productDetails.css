@@ -3,9 +3,15 @@
     width:1200px;
     height: auto;
     overflow: hidden;
+    position: relative;
+    background: #fafafa;
 }
 div.proDetails .proDetails_top{
     position: relative;
+    margin:0 auto;
+    width: 1162px;
+    background: #fff;
+    border: 1px solid #fff;
 }
 /* 面包屑导航的样式 */
 div.proDetails_top_bread{
@@ -24,10 +30,45 @@ div.proDetails_top_bread a:hover{
     color: #b20000;
 }
 /* 左侧图片部分 */
+.proDetails_top_img{
+    width: 400px;
+    height: auto;
+    float: left;
+}
 .proDetails_top_img_bigImg img{
     width: 398px;
-    height: 398px;
+    height: 398px;  
 }
+.proDetails_top_img_selector{
+    width:235px;
+    height: 210px;
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    cursor: crosshair;
+    opacity: 0.15;
+    background: #000;
+    border: 1px solid #fff;
+    display: none;
+}
+.bigView{
+    top: 50px;
+    left: 398px;
+    display: block;
+    position: absolute;
+    border: 1px solid #959595;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #fff;
+    display: none;
+}
+.bigView img{
+        width: 472.362px;
+        height: 422.111px;
+        
+}
+
 /* 下面小图片 */
 div.proDetails_top_img_smImg{
         position: relative;
@@ -36,6 +77,9 @@ div.proDetails_top_img_smImg{
         background-color: #fff;
         padding: 6px 5px;
         width: 390px;
+}
+div.proDetails_top_img_bigImg{
+    position: relative;
 }
 .proDetails_top_img_smImg div.leftButton{
         float: left;
@@ -66,4 +110,17 @@ div.proDetails_top_img_smImg{
 .proDetails_top_img_smImg div.rightButton{
     float: left;
     line-height: 82px;
+}
+/* 右侧详情列 */
+.proDetails_top_details{
+    float: left;
+    width: 450px;
+    height: auto;
+}
+.proDetails_top_details {
+
+}
+/*右侧商家信息  */
+.proDetails_top_shop{
+    float: left;
 }
