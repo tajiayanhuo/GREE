@@ -4,14 +4,15 @@ $(function(){
         var offSetX,offSetY,x,y;
         $("div.proDetails_top_img_selector")
             .css({display: "block"})
-        $(window).mousemove(function(e){
+        $("div.proDetails_top_img_bigImg>div.proDetails_top_img_trans")
+            .mousemove(function(e){
                 offSetX=e.offsetX;
                 offSetY=e.offsetY;
                  x = e.clientX;
                  y = e.clientY;
                 console.log(x,y)
-                var left = x - offSetX;
-                var top = y - offSetY;
+                var left = x- 117.5;
+                var top = y -105;
                 if(left<0){
                     left=0
                 $("div.proDetails_top_img_selector")

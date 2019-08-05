@@ -35,6 +35,11 @@ div.proDetails_top_bread a:hover{
     height: auto;
     float: left;
 }
+.proDetails_top_img_bigImg>div.proDetails_top_img_trans {
+    background-color:transparent;
+    width: 398px;
+    height: 398px;
+}
 .proDetails_top_img_bigImg img{
     width: 398px;
     height: 398px;  
@@ -44,8 +49,6 @@ div.proDetails_top_bread a:hover{
     height: 210px;
     display: block;
     position: absolute;
-    top:0px;
-    left: 0px;
     cursor: crosshair;
     opacity: 0.15;
     background: #000;
@@ -117,9 +120,7 @@ div.proDetails_top_img_bigImg{
     width: 450px;
     height: auto;
 }
-.proDetails_top_details {
 
-}
 /*右侧商家信息  */
 .proDetails_top_shop{
     float: left;
