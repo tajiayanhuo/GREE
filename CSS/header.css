@@ -1,3 +1,8 @@
+#header{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 .header_top{
     background:#f7f7f7;
     width:100%;
@@ -21,12 +26,12 @@ i{
     float:right;
     margin-right:400px;
 }
-ul li{
+div.header_top_ri ul li {
     float:left;
     line-height: 35px;
     padding:0 5px;
 }
-ul li  a:hover{
+div.header_top_ri ul li a:hover {
     color:#cc0000;
 }
 /* 上面为header_top顶部分 */
@@ -97,9 +102,11 @@ ul li  a:hover{
 }
 .tag{
     margin-left:28px;
+    margin-top: 8px;
 }
 .tag ul li {
     margin-right:8px;
+    float: left;
 }
 div.shop_car{
     float: right;

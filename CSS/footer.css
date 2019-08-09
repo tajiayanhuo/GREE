@@ -1,5 +1,8 @@
-.footer{
+#footer.footer {
     margin-top:15px;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 .footer .footer_top{
     border-top:1px solid #e2e2e2;
@@ -14,7 +17,7 @@
 .footer .footer_top ul li{
     margin-top:10px;
 }
-ul li a:hover {
+#footer ul li a:hover {
     color: #cc0000;}
 .footer_b{
     color:#747474;

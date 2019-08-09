@@ -233,7 +233,67 @@ div.pro_count span:nth-child(5){
     text-align:center;
 }
 div.pro_buy{
-    
+    width: 390px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+div.pro_buy a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+div.pro_buy a:hover{
+    border: 2px solid #dd0;
+    opacity: 0.5;
+}
+div.pro_buy a:nth-child(1){
+    background:#f00;
+    margin-right: 20px;
+}
+div.pro_buy a:nth-child(2){
+    background: #00a;
+}
+div.pro_pay{
+    height: 30px;
+    width: 390px;
+    margin-left: 100px;
+    display: flex;
+}
+div.pro_pay i{
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    background-image: url("../img/productslist/taobao.png");
+    background-position: -196px -6px;
+}
+div.pro_pay span{
+    display: block;
+    height: 40px;
+    width: 60px;
+    line-height: 40px;
+}
+div.pro_pay span:nth-child(1){
+    width: 36px;
+}
+div.pro_mobile{
+    width: 390px;
+    height: 293px;
+}
+div.pro_mobile p:nth-child(1){
+    display: block;
+    margin-left: 45px;
+    width: 390px;
+    height: 23px;
+    color: #090;
+    font-size: 14px;
 }
 /*右侧商家信息  */
 .proDetails_top_shop{
